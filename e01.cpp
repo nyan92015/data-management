@@ -51,11 +51,18 @@ template <typename T, typename S> inline void print(const vector<pair<T, S>>& v)
     {for (auto&& p : v) print(p);}
 
 int main() {
+
+    string name;
+    cout << "What is your name?" << endl;
+    cout << ">";
+    cin >> name;
+    cout << "Hello, " << name << "!" << endl;
+    
     srand(time(NULL)); /*乱数設定*/
 
     int daice1 = rand() % 6 + 1;
     int daice2 = rand() % 6 + 1;
-    
+
     cout << "Die 1: " << daice1 << endl;
     cout << "Die 2: " << daice2 << endl;
     cout << "Total value: " << daice1 + daice2 << endl;
