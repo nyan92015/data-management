@@ -57,7 +57,7 @@ int main() {
     cout << ">";
     cin >> name;
     cout << "Hello, " << name << "!" << endl;
-    
+
     srand(time(NULL)); /*乱数設定*/
 
     int daice1 = rand() % 6 + 1;
@@ -66,5 +66,6 @@ int main() {
     cout << "Die 1: " << daice1 << endl;
     cout << "Die 2: " << daice2 << endl;
     cout << "Total value: " << daice1 + daice2 << endl;
+    cout << "You" << (daice1 + daice2 > 7 ? "won!" : "lost") << endl;
     return 0;
 }
