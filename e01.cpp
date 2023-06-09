@@ -66,6 +66,6 @@ int main() {
     cout << "Die 1: " << daice1 << endl;
     cout << "Die 2: " << daice2 << endl;
     cout << "Total value: " << daice1 + daice2 << endl;
-    cout << name << " " << (daice1 + daice2 > 7 ? "won!" : "lost") << endl;
+    cout << "You" << (daice1 + daice2 > 7 ? "won!" : "lost") << endl;
     return 0;
 }
