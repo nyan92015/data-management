@@ -62,10 +62,11 @@ int main() {
 
     int daice1 = rand() % 6 + 1;
     int daice2 = rand() % 6 + 1;
+    int total = daice1 + daice2;
 
     cout << "Die 1: " << daice1 << endl;
     cout << "Die 2: " << daice2 << endl;
-    cout << "Total value: " << daice1 + daice2 << endl;
-    cout << "You" << (daice1 + daice2 > 7 ? "won!" : "lost") << endl;
+    cout << "Total value: " << total << endl;
+    cout << "You" << (total > 7 ? "won!" : "lost") << endl;
     return 0;
 }
